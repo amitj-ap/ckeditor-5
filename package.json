@@ -1,19 +1,46 @@
 {
-  "name": "ckeditor5",
+  "name": "ckeditor5-super-build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-alignment": "^40.2.0",
+    "@ckeditor/ckeditor5-autoformat": "^40.2.0",
+    "@ckeditor/ckeditor5-basic-styles": "^40.2.0",
+    "@ckeditor/ckeditor5-block-quote": "^40.2.0",
+    "@ckeditor/ckeditor5-cloud-services": "^40.2.0",
+    "@ckeditor/ckeditor5-core": "^40.2.0",
+    "@ckeditor/ckeditor5-dev-utils": "^39.5.1",
+    "@ckeditor/ckeditor5-editor-classic": "^40.2.0",
+    "@ckeditor/ckeditor5-editor-decoupled": "^40.2.0",
+    "@ckeditor/ckeditor5-essentials": "^40.2.0",
+    "@ckeditor/ckeditor5-heading": "^40.2.0",
+    "@ckeditor/ckeditor5-image": "^40.2.0",
+    "@ckeditor/ckeditor5-indent": "^40.2.0",
+    "@ckeditor/ckeditor5-link": "^40.2.0",
+    "@ckeditor/ckeditor5-list": "^40.2.0",
+    "@ckeditor/ckeditor5-media-embed": "^40.2.0",
+    "@ckeditor/ckeditor5-paragraph": "^40.2.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^40.2.0",
+    "@ckeditor/ckeditor5-table": "^40.2.0",
+    "@ckeditor/ckeditor5-theme-lark": "^40.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@wiris/mathtype-ckeditor5": "^8.8.0",
+    "css-loader": "^6.9.0",
+    "postcss-loader": "^8.0.0",
+    "raw-loader": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "style-loader": "^3.3.4",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +61,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "webpack-dev-server": "^4.15.1"
   }
 }
